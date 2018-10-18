@@ -3,7 +3,7 @@ import bs4
 import parser
 
 #main variables
-TOKEN = os.environ['TLG_TOKEN']
+TOKEN = os.environ.get('TLG_TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 #handlers
