@@ -1,11 +1,12 @@
 import telebot
 import bs4
+import os
 from Task import Task
 import parser
 import markups as m
 
 #main variables
-TOKEN = ''
+TOKEN = os.environ['TLG_TOKEN']
 bot = telebot.TeleBot(TOKEN)
 task = Task()
 
